@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="=./home.html">
+        <input type="text" name="fullname" placeholder="Enter your FullName" />
+        <input type="email" name="email" placeholder="Enter your email" />
+        <input type="number" name="age" placeholder="Enter your age" />
+        <input type="password" name="password" placeholder="Enter your password" />
+        <input type="submit" value="Register" />
+        <!-- */default content of every input field*/ -->
+    </form>
+    <!-- eg url:-http://localhost:5500/home.html?fullname=ram & email=abc@gmail.com&age=40 & password=abc
+                                              query parameters
+                                                format:key=value -->
+    <form action="./dashboard.html">
+        <h1>LOGIN</h1>
+        <label for="my-email">Email</label>
+        <input type="email" placeholder="Enter your email" name="email" id="my-email" required />
+        <br> </br> <br> </br>
+        <label for="my-password">password</label>
+        <br> </br>
+        <input type="=password" name="password" placeholder="Enter your password" id="my-password" required />
+        <br> </br> <br> </br>
+        <button type="=submit">Login</button>
+    <!-- color picker -->
+    <input type="date" name="background" />
+    <!-- date picker -->
+    <input type="date" name="birthdate" />
+    <!-- time picker -->
+    <input type="time" name="nepaltime" />
+    <!-- dropdown -->
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+    </select>
+    <!-- to select initially -->
+    <option value="female" selected>Female
+    </option>
+    <!-- checkbox -->
+    <label for="cb">
+        <input type="checkbox" name="tc" value="true" />
+        Terms and Condition
+    </label>
+    <!-- Radio button -->
+     <label for="g">Select Gender</label>
+     <br> </br>
+     <input id="g"type="radio" name="gender" value="male"/>
+     Male
+     <input id="g" type="radio" name="gender" value="female"/>
+     Female
+     <input id="g" type="radio" name="gender" value="others"/>
+     Others
+     </form>
+</body>
+
+</html>
